@@ -16,6 +16,8 @@ win_msg = '\t\t****You Won****'
 
 ip_addresses = ['127.0.1.10', '127.0.12.1']
 
+#give an example explanation
+
 def clear():
 	#for windows
 	if name == 'nt':
@@ -159,7 +161,6 @@ def easy_dificulty():
 	my_choice = None		
 	
 	while my_choice != easy_rand:
-		print(easy_rand)
 		try:
 			my_choice = int(input('Enter number: '))
 		except ValueError:
@@ -180,7 +181,11 @@ def easy_dificulty():
 				sleep(1)
 				clear()
 				print('\t\tSorry you are out of attempts')
-				break
+				sleep(3)
+				clear()
+				comment()
+				end_game()
+				
 			
 		if my_choice == easy_rand:
 			you_won()
@@ -203,7 +208,6 @@ def mid_dificulty():
 	my_choice = None		
 	
 	while my_choice != mid_rand:
-		print(mid_rand)
 		try:
 			my_choice = int(input('Enter number: '))
 		except ValueError:
@@ -224,7 +228,10 @@ def mid_dificulty():
 				sleep(1)
 				clear()
 				print('\t\tSorry you are out of attempts')
-				break
+				sleep(3)
+				clear()
+				comment()
+				end_game()
 			
 		if my_choice == mid_rand:
 			you_won()
@@ -247,7 +254,6 @@ def hard_dificulty():
 	my_choice = None		
 	
 	while my_choice != hard_rand:
-		print(hard_rand)
 		try:
 			my_choice = int(input('Enter number: '))
 		except ValueError:
@@ -268,7 +274,10 @@ def hard_dificulty():
 				sleep(1)
 				clear()
 				print('\t\tSorry you are out of attempts')
-				break
+				sleep(3)
+				clear()
+				comment()
+				end_game()
 			
 		if my_choice == hard_rand:
 			you_won()
@@ -340,5 +349,4 @@ while True:
 	else:
 		print('***NOTICE: Please enter a valid reply***\n')
 		home()
-
 
