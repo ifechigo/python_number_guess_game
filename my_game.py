@@ -17,6 +17,8 @@ win_msg = '\t\t****You Won****'
 ip_addresses = ['127.0.1.10', '127.0.12.1']
 
 #give an example explanation
+#check if users have work a particular game difficulty
+#check if user wants to work with defa
 
 def clear():
 	#for windows
@@ -287,7 +289,6 @@ def hard_dificulty():
 			clear()
 			comment()
 			end_game()
-
 sleep(3)
 clear()
 print('\t\t*****************************************')
